@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+	border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+        background-color: #111;
+        background-size: cover;
+        background-blend-mode:luminosity;
+        height: calc(100vh - 100px);
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        color: #475569;
+        padding-top: 100px;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+.central {
+        margin: auto;
+        width: 95vw;
+        height: 83vh;
+        padding: 10px 0 10px;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
+        background-color: #171717;
+}    
+.entrada_recados{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    font-size: 60px;
+    text-transform: capitalize;
+}
+.nav-botao{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+header {
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 2px 5px #555;
+}
+.recados {
+    padding: 10px;
+    width: 50%;
+    font-size: 25px;
+}
+input{
+    display: block;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    font-size: medium;
+    color: rgb(5, 5, 138);
+}
+#recado_descricao{
+    width: 98%;
+    padding: 5px;
+}
+#recado_detalhamento{
+    width: 98%;
+    padding: 5px;
+}
+#botao_salvar, #botao_sair{
+    background: #303030;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+#botao_salvar{
+    width: 98%;
+}
+
+#botao_sair{
+    width: 10vw;
+}
+
+div.informacoes{
+    text-align: center;
+}
+div.informacoes table{
+    border: 1px solid #fff;
+    display: inline-block;
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+    box-shadow: 1px 1px 2px #555;
+}
+#cabecalho-tabela{
+    font-size: 14px;
+    opacity: 1 ;
+}
+tr:nth-child(even){
+    background-color: #efefef;
+}
+div.informacoes th{
+    height: 40px;
+    border-bottom: 1px solid #999;
+    background-color:#555;
+    color: #fff;
+}
+div.informacoes tr{
+    height: 40px;
+}
+div.informacoes td{
+    border-top: 1px solid #999;
+}
+.col1 {
+    width: 800px;
+    border-right: 1px solid #666;
+}
+.col2{
+    width: 3000px;
+    border-right: 1px solid #666;
+}
+.col3{
+    width: 5000px;
+    border-right: 1px solid #666;
+}
+.col4 {
+    width: 2000px;
+}
+.editar, .excluir{
+    padding: 5px 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 2px #555;
+}
+.editar{
+    background-color: blue;
+}
+.excluir{
+    background-color: red;
+    margin-left: 10px;
+}
+/*ponteiros mouse sobre botoes*/
+#botao-cadastrar:hover{
+    cursor: pointer;
+}
+.editar:hover, .excluir:hover{
+    cursor: pointer;
+}

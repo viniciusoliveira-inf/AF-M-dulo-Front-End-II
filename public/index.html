@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recados - Login </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <div id="alertas" class="alert" role="alert" style="display: none; width: 50vw; text-align: center"></div>
+    <div class="form-parent">      
+        <div class="sign-up-img"></div>
+        <div class="sign-in-img"></div>
+        <div class="form-container">
+            <form class="form" id="sign-in-form">
+                <h1 class="title">login</h1>
+                <div class="fields">
+                    <input id="login-email" type="email" placeholder="e-mail" required>
+                    <input id="login-senha" type="password" placeholder="senha" required>
+                    <button id="botao-login" type="submit" class="btn">prosseguir</button>
+                    <p class="link" onclick="switchForm('cadastro')">Ainda não tem cadastrado?</p>
+                </div>
+            </form>
+            <form class="form" id="sign-up-form">
+                <h1 class="title">cadastro</h1>
+                <div class="fields">
+                    <input id="cadastro-nome" type="text" placeholder="nome" required>
+                    <input id="cadastro-email" type="email" placeholder="e-mail" required>
+                    <input id="cadastro-senha1" type="password" placeholder="senha" required>
+                    <input id="cadastro-senha2" type="password" placeholder="confirmação da senha" required>
+                    <button id="botao-cadastrar" type="submit" class="btn">Cadastrar</button>
+                    <p class="link" onclick="switchForm('login')">Já tem cadastro?</p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="../dist/alertas.js"></script>
+    <script src="../dist/index.js"></script>
+</body>
+</html>
